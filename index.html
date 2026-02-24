@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Báo Tường Xuân Bính Ngọ 2026 - 12C5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Be Vietnam Pro',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(to bottom,#fff5f5,#ffe6cc);
+    overflow-x:hidden;
+}
+
+#intro{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(to right,#d62828,#f77f00);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    z-index:9999;
+    animation:fadeOut 3s forwards 3s;
+}
+
+@keyframes fadeOut{
+    to{opacity:0; visibility:hidden;}
+}
+
+header{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(to right,#d62828,#f77f00);
+    color:white;
+}
+
+header h1{ font-size:42px; }
+
+header p{
+    margin-top:10px;
+    font-style:italic;
+}
+
+#countdown{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav{ background:#b22222; }
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{ margin:15px 25px; }
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{ color:#ffd60a; }
+
+main{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.card:hover{ transform:translateY(-10px); }
+
+.card h3{
+    color:#d62828;
+    margin-bottom:15px;
+}
+
+form input,form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+form button{
+    background:#f77f00;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+form button:hover{ background:#d62828; }
+
+footer{
+    background:#b22222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.flower{
+    position:fixed;
+    top:-10px;
+    font-size:20px;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    to{transform:translateY(100vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div id="intro">🌸 Chào Xuân Bính Ngọ 2026 - 12C5 🌸</div>
+
+<header>
+<h1>🌸 BÁO TƯỜNG ĐIỆN TỬ 12C5 🌸</h1>
+<p>"Xuân yêu thương – Tết đoàn viên – Khởi đầu rực rỡ"</p>
+<div id="countdown"></div>
+</header>
+
+<nav>
+<ul>
+<li><a href="#gioithieu">Giới thiệu</a></li>
+<li><a href="#vantho">Văn thơ</a></li>
+<li><a href="#lichsu">Tết Việt</a></li>
+<li><a href="#binhluan">Lời chúc</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section id="gioithieu" class="card">
+<h3>🌼 Lời Ngỏ Đầu Xuân</h3>
+<p>
+Xuân Bính Ngọ 2026 mang đến sức sống mới và niềm tin mới.
+Tập thể lớp 12C5 xin gửi lời tri ân sâu sắc đến thầy cô,
+chúc mọi người một năm thành công rực rỡ.
+</p>
+</section>
+
+<section id="vantho" class="card">
+<h3>📝 Góc Văn Thơ</h3>
+<p>
+Xuân về rộn rã khắp nơi <br>
+Mai vàng khoe sắc, đất trời thêm vui <br>
+Thanh xuân 12C5 tươi cười <br>
+Ước mơ chắp cánh sáng ngời tương lai.
+</p>
+</section>
+
+<section id="lichsu" class="card">
+<h3>🎆 Nét Đẹp Tết Việt</h3>
+<p>
+Tết Nguyên Đán là dịp sum họp gia đình, trao nhau yêu thương
+và giữ gìn những phong tục truyền thống tốt đẹp của dân tộc.
+</p>
+</section>
+
+<section id="binhluan" class="card">
+<h3>💌 Gửi Lời Chúc</h3>
+<form onsubmit="alert('🎉 Chúc mừng năm mới!'); return false;">
+<input type="text" placeholder="Họ và tên" required>
+<textarea rows="4" placeholder="Viết lời chúc..." required></textarea>
+<button type="submit">Gửi</button>
+</form>
+</section>
+
+</main>
+
+<footer>
+<p><strong>Nhóm thực hiện - Nhóm 2 Lớp 12C5</strong></p>
+<p>Mai Bích Hằng | Trần Hoài Nam | Huỳnh Duy Nam | Mai Quốc Hưng | Võ Thị Thuý Hạnh</p>
+</footer>
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function () {
+    const music = document.getElementById("music");
+    music.play().catch(() => {});
+}, { once: true });
+
+for(let i=0;i<30;i++){
+    let flower = document.createElement("div");
+    flower.className = "flower";
+    flower.innerHTML = "🌸";
+    flower.style.left = Math.random() * 100 + "vw";
+    flower.style.animationDuration = (3 + Math.random() * 5) + "s";
+    flower.style.fontSize = (15 + Math.random() * 20) + "px";
+    document.body.appendChild(flower);
+}
+</script>
+
+</body>
+</html>
